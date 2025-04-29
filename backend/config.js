@@ -1,0 +1,1 @@
+export const monogoDBURL = 'mongodb+srv://dhanush:dhanush@bookstore.6mvft9q.mongodb.net/?retryWrites=true&w=majority&appName=bookstore';
