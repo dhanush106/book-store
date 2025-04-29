@@ -2,22 +2,22 @@ import mongoose from "mongoose";
 
 const bookSchema = mongoose.Schema(
     {
-        title : {
+        title: {
             type: String,
             required: true,
         },
-        author : {
+        author: {
             type: String,
             required: true,
         },
-        publishYear : {
+        publishYear: {
             type: Number,
             required: true,
         },
     },
     {
-        Timestamp: true,
+        timestamps: true,  // Fixed typo here
     }
-)
+);
 
-export const Book = mongoose.model('Cat',bookSchema);
+export const Book = mongoose.model('Book', bookSchema);  // Changed 'Cat' to 'Book'
